@@ -7,9 +7,7 @@ A Google clone using [Next JS](https://nextjs.org) & [Tailwind CSS](https://tail
 Assuming you have [npm](https://www.npmjs.com) installed, clone the repo and run the following code:
 
 ```
-
 npm install
-
 ```
 
 ## Usage
@@ -17,9 +15,7 @@ npm install
 Inside the cloned folder run:
 
 ```
-
 npm start
-
 ```
 
 ## Example
