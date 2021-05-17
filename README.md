@@ -1,6 +1,6 @@
 # Google Clone
 
-A Google clone using [Next JS](https://nextjs.org) & [Tailwind CSS](https://tailwindcss.com) for the front-end. Inspired by [this tutorial](https://www.youtube.com/watch?v=24xpTmaPOdY&t=171s)
+A Google clone using [Next JS](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com) & [Heroicons](https://heroicons.com) for the front-end and . Inspired by [this tutorial](https://www.youtube.com/watch?v=24xpTmaPOdY&t=171s)
 
 ## Requirements
 
