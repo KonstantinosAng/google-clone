@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+import { useRouter } from 'next/router';
 import Head from 'next/head'
 import Avatar from '../components/Avatar';
 import Footer from '../components/Footer';
@@ -6,6 +8,22 @@ import { SearchIcon } from '@heroicons/react/outline';
 import Image from 'next/image';
 
 export default function Home() {
+
+  const searchInputRef = useRef(null);
+  const router = useRouter();
+
+  const search = (event) => {
+    event.preventDefault();
+    const term = searchInputRef.current.value;
+
+    if (!term) {
+      return;
+    }
+
+    router.push(`/search?term=${term}`);
+
+  }
+
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       
@@ -46,14 +64,14 @@ export default function Home() {
           />
           <div className="flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl">
             <SearchIcon className="h-5 mr-3 text-gray-500"/>
-            <input type="text" className="flex-grow  focus:outline-none"/>
+            <input ref={searchInputRef} type="text" className="flex-grow  focus:outline-none"/>
             <MicrophoneIcon className="h-5"/>
           </div>
           
           {/* Buttons */}
           <div className="flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4">
-            <button className="btn"> Google Search </button>
-            <button className="btn"> I'm Feeling Lucky </button>
+            <button onClick={(event)=>search(event)} className="btn"> Google Search </button>
+            <button onClick={(event)=>search(event)} className="btn"> I'm Feeling Lucky </button>
           </div>
         </form>
 
