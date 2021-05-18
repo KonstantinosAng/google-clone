@@ -32,3 +32,5 @@ google/.env.production.local
 
 # vercel
 google/.vercel
+
+google/Response.js
