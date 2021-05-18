@@ -50,7 +50,7 @@ export default function Home() {
         <ViewGridIcon className="h-10 w-10 p-2 cursor-pointer rounded-full hover:bg-gray-100"/>
       
         {/* Avatar */}
-        <Avatar url="https://yt3.ggpht.com/yti/ANoDKi4Nc0hLimw2QNjLrjxuuNEnU5ZMi2n2PST_ugEdhw=s88-c-k-c0x00ffffff-no-rj-mo" />
+        <Avatar className="" url="https://yt3.ggpht.com/yti/ANoDKi4Nc0hLimw2QNjLrjxuuNEnU5ZMi2n2PST_ugEdhw=s88-c-k-c0x00ffffff-no-rj-mo" />
       
         </div>
       
