@@ -29,7 +29,7 @@ export default function Home() {
       
       <Head>
         <title> Google </title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png"/>
       </Head>
       
       {/* Header */}
