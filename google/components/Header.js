@@ -20,6 +20,8 @@ function Header() {
 
     router.push(`/search?term=${term}`);
 
+    searchInputRef.current.value = term;
+
   }
 
   return (
