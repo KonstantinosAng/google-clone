@@ -4,6 +4,17 @@ A Google clone using [Next JS](https://nextjs.org), [Tailwind CSS](https://tailw
 
 ## Requirements
 
+Inside the repo there is a [.env.example file](./google/.env.example). Rename it to .env.local and fill the values with your own api keys.
+
+For the google api you will need an api key and a context key.
+
+```javascript
+NEXT_PUBLIC_GOOGLE_API_KEY=
+NEXT_PUBLIC_CONTEXT_KEY=
+```
+
+## Installation
+
 Assuming you have [npm](https://www.npmjs.com) or [yarn](https://www.yarnpkg.com) installed, clone the repo and run the following code:
 
 ```
