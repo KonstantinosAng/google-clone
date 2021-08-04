@@ -3,7 +3,7 @@
 A Google clone using [Next JS](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com) & [Heroicons](https://heroicons.com) for the front-end and the [Google Programmable Search Engine](https://developers.google.com/custom-search?authuser=1). Inspired by [this tutorial](https://www.youtube.com/watch?v=24xpTmaPOdY&t=171s)
 
 <div align="center">
-  <h1><a href="http://kangelopoulos.ddns.net:1242"> DEMO </a></h1>
+  <h1><a href="https://constantine.dev:1242"> DEMO </a></h1>
 </div>
 
 ## Requirements
