@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Header from '../components/header';
-import Response from '../Response';
 import SearchResults from '../components/SearchResults';
 
 function Search({ results }) {
@@ -28,11 +27,10 @@ function Search({ results }) {
 export default Search
 
 export async function getServerSideProps(context) {
-  const useDummyData = false;
   const startIndex = context.query.start || '0';
 
-  const data = useDummyData ? Response : await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.NEXT_PUBLIC_GOOGLE_API_KEY}&cx=${process.env.NEXT_PUBLIC_CONTEXT_KEY}&q=${context.query.term}&start=${startIndex}`).then(res => res.json()).catch(error => {
-    console.log(error)
+  const data = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.NEXT_PUBLIC_GOOGLE_API_KEY}&cx=${process.env.NEXT_PUBLIC_CONTEXT_KEY}&q=${context.query.term}&start=${startIndex}`).then(res => res.json()).catch(error => {
+    console.error(error)
   });
     
   return {
