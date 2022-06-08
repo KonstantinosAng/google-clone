@@ -1,0 +1,15 @@
+version: "2.2"
+services:
+  google:
+    # network_mode: "host"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: google
+    container_name: google
+    restart: always
+    ports:
+      - 1242:3000
+    # environment:
+    # env_file:
+    #   - ./.env
