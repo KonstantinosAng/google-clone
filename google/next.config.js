@@ -1,5 +1,5 @@
 module.exports = {
-  basePath: "/google",
+  basePath: "",
   images: {
     domains: ["www.google.com"],
   },
